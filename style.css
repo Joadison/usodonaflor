@@ -71,18 +71,33 @@ body{
     opacity: 0;
   }
   100% {
-    transform: translateX(-200px);
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  200% {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+  300% {
+    transform: translateX(-1600px);
+    opacity: 0;
+  }
+  400% {
+    transform: translateX(-3200px);
+    opacity: 0;
+  }
+  500% {
+    transform: translateX(-6400px);
     opacity: 0;
   }
 }
 
 .pic-ctn > iframe {
   position: absolute;
-  left: calc(29% - 100px);
+  left: calc(24% - 110px);
   opacity: 0;
   animation: display 10s infinite;
-  width: 100%;
-  height: 400px;
+  
 }
 
 .painel iframe:nth-child(2) {
@@ -96,4 +111,16 @@ iframe:nth-child(4) {
 }
 iframe:nth-child(5) {
   animation-delay: 8s;
+}
+iframe:nth-child(6) {
+  animation-delay: 10s;
+}
+iframe:nth-child(7) {
+  animation-delay: 12s;
+}
+iframe:nth-child(8) {
+  animation-delay: 14s;
+}
+iframe:nth-child(9) {
+  animation-delay: 16s;
 }
