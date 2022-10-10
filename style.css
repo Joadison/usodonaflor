@@ -1,34 +1,13 @@
 *{
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+	
 }
 body{
 	background-color:#f4b7d6;
 	text-align: center;
-}
-.painel {
-    width: 100%;  
-    max-width: 500px; 
-    margin: auto; 
-    padding: 20px;
-    border-radius: 15px ; 
-    background-image: url("back.jpeg");
-    text-align: center;	
-}
-.painel img{
-	width: 30%;
-    border-radius: 50%;
-	
-}
-.painel input{
-	background-color:white;
-	border-color:white;
-	border-radius: 15px;
-	width: 65%; 
-	margin:5px;
-	padding: 13px;
-	font:  15px Harlow Solid Italic;
-
+	margin: 10px;
+    padding: 15px;
 }
 .painel input:hover{
 	background-color:#f4b7d6;
@@ -48,14 +27,10 @@ body{
 	text-align: center; 
     padding: 50px;
 }
-.painel .pic-ctn {
-  position: relative;
-  width: 100%;
-  height: 530px;
-}
+
 @keyframes display {
   0% {
-    transform: translateX(200px);
+    transform: translateX(150px);
     opacity: 0;
   }
   10% {
@@ -67,37 +42,187 @@ body{
     opacity: 1;
   }
   30% {
-    transform: translateX(-200px);
+    transform: translateX(-100px);
     opacity: 0;
   }
   100% {
-    transform: translateX(-400px);
+    transform: translateX(-200px);
     opacity: 0;
   }
   200% {
-    transform: translateX(-800px);
+    transform: translateX(-400px);
     opacity: 0;
   }
   300% {
-    transform: translateX(-1600px);
+    transform: translateX(-800px);
     opacity: 0;
   }
   400% {
-    transform: translateX(-3200px);
+    transform: translateX(-1600px);
     opacity: 0;
   }
   500% {
-    transform: translateX(-6400px);
+    transform: translateX(-3200px);
     opacity: 0;
   }
 }
-
-.pic-ctn > iframe {
-  position: absolute;
-  left: calc(24% - 110px);
-  opacity: 0;
-  animation: display 10s infinite;
-  
+@media (min-width: 168px) {
+	.painel {
+	width: 100%; 
+    max-width:100%; 
+    margin: 0px;  
+    padding: 20px; 
+    border-radius: 15px;
+	background-image: url("back.jpeg");
+	text-align: center;}
+	.painel img{
+		width: 65%;
+		border-radius: 50%;}
+    .painel input{
+		background-color:white;
+		border-color:white;
+		border-radius: 15px;
+		width: 90%; 
+		margin:5px;
+		padding: 15px;
+		font:  15px Harlow Solid Italic;}
+	.painel .pic-ctn {
+		position: relative;
+		width: 100%;
+		height: 370px;}
+	.pic-ctn > iframe {
+		position: absolute;
+		left: calc(1% - 2px);
+		opacity: 0;
+		animation: display 10s infinite;
+		height:350px;}
+}
+/* Small devices ( @screen-sm-min Phones (<768px) ) */
+@media (min-width: 368px) {
+	.painel {
+	width: 100%; 
+    max-width:500px; 
+    margin: auto;  
+    padding: 15px; 
+    border-radius: 15px;
+	background-image: url("back.jpeg");
+	text-align: center;}
+	.painel img{
+		width: 40%;
+		border-radius: 50%;}
+    .painel input{
+		background-color:white;
+		border-color:white;
+		border-radius: 15px;
+		width: 65%; 
+		margin:5px;
+		padding: 13px;
+		font:  15px Harlow Solid Italic;}
+	.painel .pic-ctn {
+		position: relative;
+		width: 100%;
+		height: 500px;}
+	.pic-ctn > iframe {
+		position: absolute;
+		left: calc(18% - 80px);
+		opacity: 0;
+		animation: display 10s infinite;
+		height:450px;}
+}
+@media (min-width: 768px) {
+	.painel {
+	width: 100%; 
+    max-width:500px; 
+    margin: auto;  
+    padding: 15px; 
+    border-radius: 15px;
+	background-image: url("back.jpeg");
+	text-align: center;}
+	.painel img{
+		width: 40%;
+		border-radius: 50%;}
+    .painel input{
+		background-color:white;
+		border-color:white;
+		border-radius: 15px;
+		width: 65%; 
+		margin:5px;
+		padding: 13px;
+		font:  15px Harlow Solid Italic;}
+	.painel .pic-ctn {
+		position: relative;
+		width: 100%;
+		height: 550px;}
+	.pic-ctn > iframe {
+		position: absolute;
+		left: calc(18% - 80px);
+		opacity: 0;
+		animation: display 10s infinite;
+		height:550px;}
+}
+/* Medium devices ( @screen-md-min desktops, 992px and up) */
+@media (min-width: 992px) {
+	.painel {
+	width: 100%; 
+    max-width:500px; 
+    margin: auto;  
+    padding: 15px; 
+    border-radius: 15px;
+	background-image: url("back.jpeg");
+	text-align: center;}
+	.painel img{
+		width: 40%;
+		border-radius: 50%;}
+    .painel input{
+		background-color:white;
+		border-color:white;
+		border-radius: 15px;
+		width: 65%; 
+		margin:5px;
+		padding: 13px;
+		font:  15px Harlow Solid Italic;}
+	.painel .pic-ctn {
+		position: relative;
+		width: 100%;
+		height: 550px;}
+	.pic-ctn > iframe {
+		position: absolute;
+		left: calc(18% - 80px);
+		opacity: 0;
+		animation: display 10s infinite;
+		height:550px;}
+}
+/* Large devices ( @screen-lg-min large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.painel {
+	width: 100%; 
+    max-width:500px; 
+    margin: auto;  
+    padding: 15px; 
+    border-radius: 15px;
+	background-image: url("back.jpeg");
+	text-align: center;}
+	.painel img{
+		width: 40%;
+		border-radius: 50%;}
+    .painel input{
+		background-color:white;
+		border-color:white;
+		border-radius: 15px;
+		width: 65%; 
+		margin:5px;
+		padding: 13px;
+		font:  15px Harlow Solid Italic;}
+	.painel .pic-ctn {
+		position: relative;
+		width: 100%;
+		height: 550px;}
+	.pic-ctn > iframe {
+		position: absolute;
+		left: calc(22% - 100px);
+		opacity: 0;
+		animation: display 10s infinite;
+		height:550px;}
 }
 
 .painel iframe:nth-child(2) {
